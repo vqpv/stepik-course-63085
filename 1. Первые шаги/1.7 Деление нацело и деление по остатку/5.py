@@ -1,3 +1,1 @@
-N, R = int(input()), int(input())
-
-print(N // R)
+print(int(input()) // 100 % 10)

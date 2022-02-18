@@ -1,3 +1,3 @@
-num = int(input())
+N, R = int(input()), int(input())
 
-print((num // 100) + (num // 10 % 10) + (num % 10))
+print(N // R)

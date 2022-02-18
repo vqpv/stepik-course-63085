@@ -1,3 +1,10 @@
 n = int(input())
 
-print((n // 60) % 24, n % 60)
+list_c = [1, 5, 10, 20, 100]
+summa = 0
+
+for i in reversed(list_c):
+    summa += n // i
+    n %= i
+
+print(summa)

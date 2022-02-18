@@ -1,1 +1,3 @@
-print(int(input()) // 100 % 10)
+n, k = int(input()), int(input())
+
+print(k // n)
