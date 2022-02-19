@@ -1,1 +1,1 @@
-print(len(input()))
+print((input() + ' ') * 4, end='')
