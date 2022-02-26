@@ -1,9 +1,5 @@
-X, Y = map(int, input().split())
+word = input()
 
-c = 1
-
-while X <= Y:
-    X *= 1.15
-    c += 1
-
-print(c)
+while word:
+    print(word)
+    word = word[1:-1]

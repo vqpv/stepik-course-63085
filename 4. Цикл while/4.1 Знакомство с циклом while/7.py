@@ -1,6 +1,9 @@
-num = input()
+X, Y = map(int, input().split())
 
-while num[0] != '1' and int(num) < 1000000000:
-    num = str(int(num[0]) * int(num))
+c = 1
 
-print(num)
+while X <= Y:
+    X *= 1.15
+    c += 1
+
+print(c)

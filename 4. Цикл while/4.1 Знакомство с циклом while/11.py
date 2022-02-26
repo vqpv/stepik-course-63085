@@ -1,10 +1,6 @@
-n, m = map(int, input().split())
+num = input()
 
-a, b, c = 0, 0, 0
+while num[0] != '1' and int(num) < 1000000000:
+    num = str(int(num[0]) * int(num))
 
-while a * 2 < n:
-    if a + (n - a ** 2) ** 2 == m:
-        c += 1
-    a += 1
-        
-print(c)
+print(num)

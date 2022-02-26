@@ -1,4 +1,5 @@
-num = int(input())
+i, j = 1000, 2000
 
-while num != 0:
-    num = int(input())
+while i <= j:
+    print(i)
+    i += 1

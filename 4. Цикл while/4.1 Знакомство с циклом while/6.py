@@ -1,11 +1,7 @@
-n, m = map(int, input().split())
+n = int(input())
 
-c = 0
+c = 1
 
-while n > 0:
-    n -= 1
+while c ** 2 <= n:
+    print(c ** 2)
     c += 1
-    if c % m == 0:
-        n += 1
-
-print(c)

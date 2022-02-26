@@ -1,10 +1,13 @@
-h = int(input())
+n = int(input())
 
-i, c = 1, 1
+i = 0
+f = 0
 
-while h > 0:
+while f < n:
+    f = 2 ** i
     i += 1
-    c += i
-    h -= c
 
-print(i - 1)
+if f == n:
+    print(i - 1)
+else:
+    print("НЕТ")

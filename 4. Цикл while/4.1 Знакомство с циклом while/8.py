@@ -1,13 +1,11 @@
-n = int(input())
+n, m = map(int, input().split())
 
-i = 0
-f = 0
+c = 0
 
-while f < n:
-    f = 2 ** i
-    i += 1
+while n > 0:
+    n -= 1
+    c += 1
+    if c % m == 0:
+        n += 1
 
-if f == n:
-    print(i - 1)
-else:
-    print("НЕТ")
+print(c)
